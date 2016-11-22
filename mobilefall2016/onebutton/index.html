@@ -1,11 +1,11 @@
-<!doctype>
+<!--<!doctype>
 <html>
     <!-- The goal: show that the button responds to the four events:
     mousedown
     mouseup
     mouseover
     mouseout
-    secondary goal: center the button in the middle of the page-->
+    secondary goal: center the button in the middle of the page
     <head>
     <title>One button, four events</title>
     <link rel="stylesheet" href="style.css">
@@ -17,7 +17,7 @@
         <script src="script.js">
     </script>
     </body>
-</html>
+</html> -->
 
 <!doctype html>
 <html lang="en">
@@ -28,10 +28,10 @@
 </head>
 <body>
  
-<p>Four Events</p>
+<button id="btn">Four Events</button>
  
 <script>
-$( "p" )
+$( "button" )
   .mouseup(function() {
     $( this ).append( "<span style='color:#f00;'>Mouse up.</span>" );
   })
