@@ -8,3 +8,5 @@ function eventCallback (e){
 
 //attach event handlers to the button
 //for each of the four events mention the button
+$("btn").mousedown(eventCallback());
+$("btn").mouseup(eventCallback());
