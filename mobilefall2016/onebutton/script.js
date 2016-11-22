@@ -9,7 +9,7 @@ function eventCallback (e){
 //attach event handlers to the button
 //for each of the four events mention the button
 <script>
-$( "p" )
+$( "button" )
   .mouseup(function() {
     $( this ).append( "<span style='color:#f00;'>Mouse up.</span>" );
   })
