@@ -1,20 +1,23 @@
-<!doctype>
-<html>
-    <!-- The goal: show that the button responds to the four events:
-    mousedown
-    mouseup
-    mouseover
-    mouseout
-    secondary goal: center the button in the middle of the page-->
-    <head>
-    <title>One button, four events</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <button id="btn">Four Events</button>
-        <br>
-        <span id="msg">messages go here</span>
-        <script src="script.js">
-    </script>
-    </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>mousedown demo</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p>Press mouse and release here.</p>
+ 
+<script>
+$( "p" )
+  .mouseup(function() {
+    $( this ).append( "<span style='color:#f00;'>Mouse up.</span>" );
+  })
+  .mousedown(function() {
+    $( this ).append( "<span style='color:#00f;'>Mouse down.</span>" );
+  });
+</script>
+ 
+</body>
 </html>
