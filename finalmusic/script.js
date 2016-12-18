@@ -1,10 +1,3 @@
-/*
-	Quick and dirty music player.
-	When a song is selected
-	1.) Its picture will show in the frame.
-	2.) The song will play.
-	
-*/
 //HTML element wrapper
 function id(idString){
 	return document.getElementById(idString);
@@ -12,6 +5,7 @@ function id(idString){
 // Gather all the elements
 var choices = id("choices");
 var pictureFrame = id("pictureFrame");
+var controlsFrame = id("controlsFrame");
 var songTitle = id("songTitle");
 var divs = document.getElementsByTagName('div');
 var boxes = document.getElementsByClassName('box');
@@ -63,8 +57,6 @@ function playNewSong(){
 		player.play();		
 	}
 }
-
-//---------------------------------------------------------------------------------------------
 
 // have window object handle resize event and load event
 window.addEventListener("load", flipFlop);
