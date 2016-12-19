@@ -1,30 +1,12 @@
-html{
-    height: 100%;
-    width: 100%;
-    border: 0;
-    margin: 0;
-}
 body{
-	background: radial-gradient(gray, black);
-}
-#holder{
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	margin: auto;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom:0;
-	overflow-x: hidden;
+	background: radial-gradient(gray, blue);
 }
 
 #app{
   text-align: center;
-  background-color: gray;
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: 75%;
+  height: 97%;
   top:0;
   bottom: 0;
   left: 0;
@@ -39,8 +21,7 @@ body{
 }
 
 #player{
-    display: inline-block;
-    width: 90%;
+    width: 65%;
     font-size: 0.15rem;
 }
 
@@ -52,8 +33,8 @@ body{
 }
 
 .box{
-  border-radius: 1rem;
-  border: 1px solid black;
+  border-radius: 0.5rem;
+  border: 1px solid white;
 }
 
 .vertical{
@@ -63,7 +44,9 @@ body{
 
 .horizontal{
   display: inline-block;
+  vertical-align: top;
   height: 99%;
   width: 49%;
+}
 }
 
